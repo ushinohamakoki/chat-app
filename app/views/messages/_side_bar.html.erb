@@ -1,5 +1,9 @@
 <div class="side-header">
-   <div class="s-name">Tom</div>
+   <div class="s-name">
+      <%= link_to edit_user_path(current_user), class:"name-underline" do %>
+        <%= current_user.name %>
+      <% end %>
+   </div>
   <div class="s-btn">
     <a href="#">chatを作成する</a>
   </div>
